@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7EFEF"
+    >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        >
+        <EditText
+            android:id="@+id/edEdit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@android:drawable/ic_search_category_default"
+            android:layout_toLeftOf="@+id/btnSearch"
+            />
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentRight="true"
+            />
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list"
+        android:dividerHeight="4dp"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+<View
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"/>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/frame_details"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:elevation="1dp"
+        tools:context=".MainActivity">
+
+    </FrameLayout>
+</LinearLayout>

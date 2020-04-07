@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7EFEF"
+    tools:context=".BookListFragment">
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+    >
+    <EditText
+        android:id="@+id/edEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:hint="Search"
+        android:paddingLeft="10dp"
+        android:imeOptions="flagNoExtractUi"
+        android:drawableLeft="@android:drawable/ic_search_category_default"
+        android:layout_toLeftOf="@+id/btnSearch"
+        />
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:text="Search"
+        android:layout_alignParentRight="true"
+        />
+ </RelativeLayout>
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        android:dividerHeight="4dp"
+        android:layout_marginTop="70dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+
+</FrameLayout>
