@@ -13,10 +13,10 @@
         <EditText
             android:id="@+id/edEdit"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_alignParentLeft="true"
             android:hint="Search"
-            android:drawableRight="@android:drawable/ic_search_category_default"
+            android:drawableLeft="@android:drawable/ic_search_category_default"
             android:layout_toLeftOf="@+id/btnSearch"
             />
         <Button
@@ -24,6 +24,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Search"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
             android:layout_alignParentRight="true"
             />
         <ListView xmlns:android="http://schemas.android.com/apk/res/android"
