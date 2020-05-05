@@ -1,2 +1,3 @@
-# BookShelf_ver1
-Implementation of assignment 7
+
+BookShelf_Audio_Library
+one can implement audio library on any projects
